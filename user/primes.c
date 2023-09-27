@@ -13,7 +13,7 @@ void prime(int fd[2])
     // 在循环中添加条件，检查是否成功读取数据
     while (read(fd[0], &preNum, sizeof(int)) > 0)
     {
-        printf("primes: %d\n", preNum);
+        printf("prime %d\n", preNum);
 
         int pid = fork();
         if (pid > 0)
